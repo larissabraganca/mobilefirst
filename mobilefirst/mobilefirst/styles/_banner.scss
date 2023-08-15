@@ -1,0 +1,46 @@
+@import './variaveis';
+
+.secao_banner {
+    background-color: $letras-card;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.titulo_banner {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700;
+    color: $letras-branco;
+    font-family: Poppins;
+    text-align: center;
+}
+
+.paragrafo_banner {
+    padding: 1em;
+    text-align: center;
+    font-family: Poppins;
+    color: $letras-branco;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.campo_pesquisa {
+    background-color: $letras-card;
+    display: flex;
+    width: 90VW;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    border: 1px solid $letras-branco;
+    font-family: Poppins;
+}
+
+.campo_pesquisa::placeholder {
+    color: $letras-branco;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    background: url(./imgbanner/Pesquisa.png)no-repeat;
+}

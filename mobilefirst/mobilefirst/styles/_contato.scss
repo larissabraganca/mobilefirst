@@ -1,0 +1,33 @@
+@import './variaveis';
+
+.secao_contato {
+    background: $letras-branco;
+    padding: 1em;
+}
+
+.titulo_contato, .paragrafo_contato {
+    color: $letras-card;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: left;
+}
+
+.paragrafo_contato {
+    font-size: 16px;
+    margin: 1em 0;
+}
+
+
+.campo_contato {
+    color: $letras-card;
+    padding: 1em;
+    border: 1px solid $letras-card;
+    border-radius: 24px;
+    width: 90%;
+}
+
+.campo_contato::placeholder{
+    color: $letras-card;
+    background: url("../imgemail/Email.png")no-repeat;
+    padding-left: 3em;
+}

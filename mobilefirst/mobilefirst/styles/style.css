@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+body {
+  background-color: antiquewhite;
+}
+
+.cabecalho {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.container__botao:checked ~ .lista_menu {
+  display: block;
+}
+
+.cabecalho_menu_hamburguer {
+  width: 48px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../imgheader/Menu.png");
+  display: inline-block;
+}
+
+.container_imagem {
+  padding: 1em;
+}
+
+.lista_menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  list-style: none;
+}
+
+.lista_menu .lista_menu_titulo {
+  padding: 1em;
+  background-color: #fff;
+}
+
+.lista_menu_titulo:hover {
+  background-color: #002F52;
+  color: var(--cor-fundo);
+}
+
+.categorias {
+  color: #EB9B00;
+  font-family: Poppins;
+  font-size: 16px;
+}
+
+.cursos {
+  color: #EB9B00;
+  font-family: Poppins;
+  font-size: 16px;
+}
+
+.secao_banner {
+  background-color: #002F52;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.titulo_banner {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  font-family: Poppins;
+  text-align: center;
+}
+
+.paragrafo_banner {
+  padding: 1em;
+  text-align: center;
+  font-family: Poppins;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.campo_pesquisa {
+  background-color: #002F52;
+  display: flex;
+  width: 90VW;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+  border: 1px solid #fff;
+  font-family: Poppins;
+}
+
+.campo_pesquisa::-moz-placeholder {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  background: url(./imgbanner/Pesquisa.png) no-repeat;
+}
+
+.campo_pesquisa::placeholder {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  background: url(./imgbanner/Pesquisa.png) no-repeat;
+}
+
+.carrosel {
+  color: #EB9B00;
+  font-family: Poppins;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+  padding: 1em 0 0.5em 0;
+  background-color: #fff;
+  text-transform: uppercase;
+}
+
+.swiper-slide .img {
+  width: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
+}
+
+.swiper-pagination {
+  width: 8px;
+  height: 8px;
+  position: inherit;
+  margin: 1em;
+}
+
+.cards {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin: 1em;
+  padding: 1em;
+}
+
+.container_card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.htres {
+  color: #EB9B00;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.hdois {
+  color: #002F52;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0.5em 0;
+}
+
+.paragrafo {
+  color: rgba(0, 0, 0, 0.85);
+  font-family: Poppin;
+  font-weight: 400;
+  margin: 1em 0;
+  width: 148px;
+  height: 65px;
+}
+
+.imagem_angular {
+  display: flex;
+}
+
+.botoes_card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.botoes {
+  display: flex;
+  align-items: center;
+}
+
+.botao_itens {
+  margin: 0 0.5em;
+  display: flex;
+}
+
+.imagem_card {
+  width: 30px;
+  height: 30px;
+}
+
+.imgestrelas {
+  margin-bottom: 0.5em;
+}
+
+.botao_ancora {
+  background-color: #EB9B00;
+  padding: 1em 1.2em;
+  text-decoration: none;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 1rem;
+  width: 125px;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.topicos_rodape {
+  background-color: #002F52;
+  text-align: center;
+}
+
+.topico_titulo {
+  color: #fff;
+  font-weight: 300;
+  padding: 20px;
+}
+
+.topico_lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.topico_itens {
+  margin: 2em 0.5em;
+}
+
+.topico_link {
+  background-color: #EB9B00;
+  color: #fff;
+  text-decoration: none;
+  padding: 1em;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: linear-gradient(to left, #002F52, #EB9B00, rgba(0, 0, 0, 0));
+  border-top: 2px solid #000;
+  margin-top: 1rem;
+}
+
+.secao_contato {
+  background: #fff;
+  padding: 1em;
+}
+
+.titulo_contato, .paragrafo_contato {
+  color: #002F52;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: left;
+}
+
+.paragrafo_contato {
+  font-size: 16px;
+  margin: 1em 0;
+}
+
+.campo_contato {
+  color: #002F52;
+  padding: 1em;
+  border: 1px solid #002F52;
+  border-radius: 24px;
+  width: 90%;
+}
+
+.campo_contato::-moz-placeholder {
+  color: #002F52;
+  background: url("../imgemail/Email.png") no-repeat;
+  padding-left: 3em;
+}
+
+.campo_contato::placeholder {
+  color: #002F52;
+  background: url("../imgemail/Email.png") no-repeat;
+  padding-left: 3em;
+}/*# sourceMappingURL=style.css.map */

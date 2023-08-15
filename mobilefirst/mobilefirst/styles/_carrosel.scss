@@ -1,0 +1,28 @@
+@import './variaveis';
+
+.carrosel {
+    color: $letras-carrosel;
+    font-family: Poppins;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700;
+    padding: 1em 0 0.5em 0;
+    background-color: $letras-branco;
+    text-transform: uppercase;
+}
+
+.swiper-slide .img {
+    width: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    display: none;
+}
+
+.swiper-pagination {
+    width: 8px;
+    height: 8px;
+    position: inherit;
+    margin: 1em;
+}

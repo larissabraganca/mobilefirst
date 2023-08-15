@@ -1,0 +1,28 @@
+@import './variaveis';
+
+.topicos_rodape{
+    background-color: $letras-card;
+    text-align: center;
+}
+.topico_titulo{
+    color: $letras-branco;
+    font-weight: 300;
+    padding: 20px;
+}
+.topico_lista{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.topico_itens{
+    margin: 2em 0.5em;
+
+}
+.topico_link{
+    background-color: $letras-carrosel;
+    color: $letras-branco;
+    text-decoration: none;
+    padding: 1em;
+    font-size: 16px;
+    font-weight: 700;
+}

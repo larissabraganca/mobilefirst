@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+@import './variaveis';
+
+body{
+    background-color: antiquewhite;
+}
+.cabecalho {
+    background-color: $letras-branco;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.container {
+    display: flex;
+    align-items: center;
+}
+.container__botao:checked~.lista_menu {
+    display: block;
+}
+.cabecalho_menu_hamburguer {
+    width: 48px;
+    height: 48px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../imgheader/Menu.png");
+    display: inline-block;
+}
+
+.container_imagem {
+    padding: 1em;
+}
+
+.lista_menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    list-style: none;
+}
+
+.lista_menu .lista_menu_titulo {
+    padding: 1em;
+    background-color: $letras-branco;
+}
+.lista_menu_titulo:hover {
+    background-color: $letras-card;
+    color: var(--cor-fundo);
+}
+
+.categorias {
+    color: $letras-carrosel;
+    font-family:Poppins;
+    font-size: 16px;
+}
+.cursos {
+    color: $letras-carrosel;
+    font-family:Poppins;
+    font-size: 16px;
+}

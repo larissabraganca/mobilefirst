@@ -1,0 +1,11 @@
+@import ./_variaveis.scss
+
+@mixin cores($cor...)
+    background: linear-gradient(to left, $cor)
+
+footer
+    text-align: center
+    padding: 1rem
+    @include cores($letras-card, $letras-carrosel, $letras-preto)
+    border-top: 2px solid #000
+    margin-top: 1rem
